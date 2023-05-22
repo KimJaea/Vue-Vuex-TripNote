@@ -1,21 +1,19 @@
 <template>
-  <div class="home">
+  <div>
     <the-header-navbar />
-    <h1>Home Page for This Web Site!!!</h1>
+    계획 리스트
 
-    <home-page />
+    <router-link :to="{ name: 'planwrite' }">여행 계획</router-link>
   </div>
 </template>
-
-<script>
+  
+  <script>
 import TheHeaderNavbar from "@/components/TheHeaderNavbar";
-import HomePage from "@/components/Home.vue";
 
 export default {
-  name: "HomeView",
+  name: "PlanList",
   components: {
     TheHeaderNavbar,
-    HomePage,
   },
   data() {
     return {
@@ -26,3 +24,5 @@ export default {
   methods: {},
 };
 </script>
+  
+  <style scoped></style>
